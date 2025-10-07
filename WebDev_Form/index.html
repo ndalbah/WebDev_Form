@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div style="
+            display: grid;
+            grid-template-columns: 350px 1px 1fr;" >
+
+            <div class="left-column">
+                <div class="address-group">
+                    <img src="address.png" class="address-logo">
+                    <p class="address-left">Address</p>
+                    <p style="
+                    color: rgb(180, 176, 176)" class="address-line">2000 St. Catherine Ouest</p>
+                </div>
+
+               <div class="phone-group">
+                    <img src="phone.svg" class="phone-logo">
+                    <p class="phone-left">Phone</p>
+                    <p style="
+                    color: rgb(180, 176, 176)" class="phone-1">5142223333</p>
+                    <p style="
+                    color: rgb(180, 176, 176)" class="phone-2">4381112222</p>
+               </div>
+               
+               <div class="email-group">
+                    <img src="email.svg" class="email-logo">
+                    <p class="email-left">Email</p>
+                    <p style="
+                    color: rgb(180, 176, 176)" class="email-1">midterm1@gmail.com</p>
+                    <p style="
+                    color: rgb(180, 176, 176)" class="email-2">web.developer@gmail.com</p>
+               </div>
+
+               <div>
+                <a href="https://www.w3schools.com/whatis/" target="_blank"><img src="logo.svg" class="svg-logo"></a>
+               </div>
+               
+            </div>
+
+            <div style="
+                border: 1px solid rgb(186, 186, 186);
+                height: 400px;
+                margin-top: 150px;
+                margin-left: 0px;"
+                ></div>
+    
+            <div style="margin-left: 50px">
+                <h1 class="header">EXAM 1 - WEB DEVELOPING WINTER 2004</h1>
+                <p class="city-title">SELECT CITY</p>
+                <select class="select-city">
+                    <option value="select">Select Your City</option>
+                    <option value="mtl">Montreal</option>
+                    <option value="laval">Laval</option>
+                    <option value="longueil">Longueil</option>
+                </select>
+
+                <p class="date-title">SELECT DATE AND TIME</p>
+                <input id="date" name="date" type="date" class="date-input">
+                <input id="time" name="time" type="time" class="time-input">
+                <p class="visiting-note">(Note:Visiting hours are 8am to 8pm)</p>
+
+                <p class="details-title">PERSONAL DETAILS</p>
+                <input id="fullName" name="fullName" type="text" placeholder="Full name*" class="name-input"><br>
+
+                <input id="mobNum" name="mobNum" type="text" placeholder="Mobile number*" class="mobile-input"><br>
+
+                <input id="email" name="email" type="text" placeholder="Email(optional)" class="email-input"><br>
+
+                <input id="textMsg" name="textMsg" type="text" placeholder="Type text message" class="message-input"><br>
+
+                <button class="submit-button">Submit</button>
+
+            </div>
+        </div>
+    </body>
+
+    <style>
+        body{
+            font-family: arial;
+        }
+
+        .left-column{
+            margin-top: 100px;
+        }
+
+        .address-logo{
+            width:30px;
+        }
+
+        .address-group{
+            text-align: center;
+        }
+
+        .address-left, .phone-left, .email-left{
+            margin-bottom: 1px;
+        }
+
+        .address-line, .phone-1, .phone-2, .email-1, .email-2{
+            margin-top:1px;
+            margin-bottom:1px;
+        }
+
+        .phone-logo{
+            width:30px;
+        }
+
+        .phone-group{
+            margin-top:50px;
+            text-align: center;
+        }
+
+        .phone-2{
+            margin-top: 1px;
+            margin-bottom:1px;
+        }
+        .email-logo{
+            width:30px;
+        }
+
+        .email-group{
+            margin-top:50px;
+            text-align: center;
+        }
+
+        .svg-logo{
+            width:300px;
+            margin-left:50px;
+            margin-top: 30px;
+        }
+
+        .header{
+            text-align: center;
+        }
+
+        .city-title{
+            margin-top:40px;
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        .select-city{
+            background-color: rgb(226, 226, 226);
+            height: 36px;
+            width: 950px;
+            margin-bottom:10px;
+        }
+
+        .date-title{
+            font-size: x-large;
+            font-weight: 500;
+        }
+
+        .date-input{
+            background-color: rgb(226, 226, 226);
+            height: 36px;
+            width: 462px;
+        }
+
+        .time-input{
+            background-color: rgb(226, 226, 226);
+            height: 36px;
+            width:462px;
+            margin-left:10px;
+        }
+
+        .visiting-note{
+            font-size:small;
+            margin-top: 3px;
+        }
+
+        .details-title{
+            font-size: x-large;
+            font-weight: 500;
+            margin-bottom: 3px;
+        }
+
+        .name-input, .mobile-input, .email-input{
+            margin-bottom:13px;
+            height: 36px;
+            width: 950px;
+        }
+
+        .message-input{
+            margin-bottom: 20px;
+            height:90px;
+            width:950px;
+        }
+
+        .submit-button{
+            height:50px;
+            width:950px;
+            text-align: center;
+            background-color: rgb(27, 158, 194);
+            color: white;
+            border: none;
+            border-radius: 2px;
+        }
+
+        .submit-button:hover{
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    </style>
+</html>
